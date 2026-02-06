@@ -1,3 +1,62 @@
+/* ---------- DARK / LIGHT MODE ---------- */
+
+#theme-toggle {
+  display: none;
+}
+
+.theme-label {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #e5e7eb;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+/* DARK MODE STYLES */
+#theme-toggle:checked ~ .container,
+#theme-toggle:checked ~ footer {
+  background-color: #111827;
+  color: #e5e7eb;
+}
+
+#theme-toggle:checked ~ .container .sidebar {
+  background-color: #020617;
+}
+
+#theme-toggle:checked ~ .container .content {
+  background-color: #111827;
+}
+
+#theme-toggle:checked ~ .container h2,
+#theme-toggle:checked ~ .container h3 {
+  color: #38bdf8;
+}
+
+#theme-toggle:checked ~ .container .item:hover {
+  background-color: #1f2933;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
