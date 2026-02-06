@@ -47,16 +47,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -67,6 +57,9 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
 }
+
+
+
 
 /* MAIN CONTAINER */
 .container {
@@ -219,5 +212,35 @@ body {
   height: 6px;
   background-color: #38bdf8; /* light blue */
   border-radius: 50%;
+}
+
+
+/* ---------- CONTACT FORM ---------- */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 800px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.contact-form button {
+  padding: 8px;
+  background-color: #38bdf8;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contact-form button:hover {
+  background-color: #0ea5e9;
 }
 
